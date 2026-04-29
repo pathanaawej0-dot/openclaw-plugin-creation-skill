@@ -1,5 +1,5 @@
 ---
-name: openclaw-plugin
+name: openclaw-plugin-creator-skill
 description: Build OpenClaw plugins from scratch — including the manifest, entry point, tool registration, channel plugins, provider plugins, config schema, setup wizards, runtime helpers, and publishing steps. Use this skill whenever the user wants to create, extend, debug, or publish any OpenClaw plugin, skill, or hook.
 version: 1.0.0
 homepage: https://github.com/pathanaawej0-dot/openclaw-plugin-creation-skill

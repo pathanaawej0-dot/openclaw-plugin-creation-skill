@@ -1,4 +1,4 @@
-# OpenClaw Plugin Development Skill
+# OpenClaw Plugin Creator Skill
 
 An expert agent skill for building, testing, and publishing native OpenClaw plugins.
 
@@ -52,7 +52,7 @@ clawhub skill publish .
 ### 4. Verification
 The CLI will validate your structure and version. Once uploaded, wait a few minutes for the skill to appear in the registry. Users can then install it using:
 ```bash
-npx clawhub install openclaw-plugin
+npx clawhub install openclaw-plugin-creator-skill
 ```
 
 ---
