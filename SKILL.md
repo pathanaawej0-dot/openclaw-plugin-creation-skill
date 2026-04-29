@@ -1,9 +1,19 @@
 ---
 name: openclaw-plugin
-description: Build OpenClaw plugins from scratch — including the manifest, entry point, tool registration, channel plugins, provider plugins, config schema, setup wizards, runtime helpers, and publishing steps. Use this skill whenever the user wants to create, extend, debug, or publish any OpenClaw plugin, skill, or hook. Also trigger when they mention openclaw.plugin.json, definePluginEntry, defineChannelPluginEntry, ClawHub, api.runtime, createPluginRuntimeStore, or want to add a tool/channel/provider/command/hook to their OpenClaw Gateway. Even if the user just says "I want to add a feature to OpenClaw" or "build me an openclaw plugin for X", use this skill immediately. Also trigger for debugging plugin conflicts, stale entries, or config validation failures.
+description: Build OpenClaw plugins from scratch — including the manifest, entry point, tool registration, channel plugins, provider plugins, config schema, setup wizards, runtime helpers, and publishing steps. Use this skill whenever the user wants to create, extend, debug, or publish any OpenClaw plugin, skill, or hook.
+version: 1.0.0
+homepage: https://github.com/pathanaawej0-dot/openclaw-plugin-creation-skill
+metadata:
+  clawdbot: true
 ---
 
 # OpenClaw Plugin Development — Expert Reference
+
+## 🛡️ Security, Privacy & Trust
+This skill is purely instructional and does not execute remote code, access external endpoints (other than documentation), or modify system files without explicit user direction. All generated code should be reviewed before execution.
+- **Data Privacy:** This skill does not collect or transmit user data.
+- **External Calls:** No hidden background network requests.
+- **Trust Statement:** This skill follows OpenClaw's security best practices for plugin development.
 
 ## What can a plugin do?
 

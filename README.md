@@ -27,26 +27,33 @@ The agent will use its expert knowledge of the OpenClaw SDK, manifest schema, an
 
 ## 📦 Publishing to ClawHub
 
-ClawHub is the central marketplace for OpenClaw plugins and skills. Since ClawHub auto-indexes the public npm registry, publishing your skill is straightforward.
+ClawHub is the central marketplace for OpenClaw skills. Publishing is handled locally through the official `clawhub` command-line interface.
 
-### 1. Initialize your package
-Ensure your skill directory has a `package.json`. If it doesn't, run:
+### 1. Prerequisites
+- **GitHub Account:** Must be at least one week old.
+- **`clawhub` CLI:** Install the official CLI tool:
+  ```bash
+  npm install -g @openclaw/clawhub-cli
+  ```
+
+### 2. Prepare Your Skill
+Ensure your directory contains the following mandatory files:
+- `SKILL.md` (with updated version and `metadata.clawdbot: true`)
+- `CHANGELOG.md`
+- `README.md`
+- `scripts/` folder
+
+### 3. Validate and Publish
+Open your terminal in the skill directory and run:
 ```bash
-npm init -y
+clawhub skill publish .
 ```
 
-### 2. Configure for OpenClaw
-Add the `openclaw` metadata to your `package.json` to help ClawHub identify your plugin's capabilities.
-
-### 3. Build and Package
-If your skill requires bundling, ensure your build scripts are ready. For a standard `.skill` file, you can use the `package_skill.cjs` script provided by the `skill-creator` tool.
-
-### 4. Publish to npm
-Run the following command to make your skill available on ClawHub:
+### 4. Verification
+The CLI will validate your structure and version. Once uploaded, wait a few minutes for the skill to appear in the registry. Users can then install it using:
 ```bash
-npm publish --access public
+npx clawhub install openclaw-plugin
 ```
-*Note: Once published to npm, ClawHub will automatically discover and index your skill.*
 
 ---
 
