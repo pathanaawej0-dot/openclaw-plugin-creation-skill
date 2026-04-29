@@ -52,7 +52,7 @@ clawhub skill publish .
 ### 4. Verification
 The CLI will validate your structure and version. Once uploaded, wait a few minutes for the skill to appear in the registry. Users can then install it using:
 ```bash
-npx clawhub install openclaw-plugin-creator-skill
+npx clawhub install openclaw-plugin-creator-agent-skill
 ```
 
 ---
